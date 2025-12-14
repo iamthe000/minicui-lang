@@ -168,6 +168,18 @@ FUNC LOSE_FUNC
     CLEAR
     COLOR 31
     CENTER 12 "GAME OVER..."
+    
+    # WHILE TEST
+    SET C 5
+    WHILE C > 0
+        POS 1 20
+        PRINT "RESTARTING IN "
+        POS 15 20
+        PRINT C
+        SLEEP 500
+        SUB C 1
+    ENDWHILE
+
     KEYWAIT K
     EXIT
 ENDFUNC
